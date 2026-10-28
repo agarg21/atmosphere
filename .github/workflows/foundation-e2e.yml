@@ -13,7 +13,7 @@ name: "CI: Foundation E2E"
 
 on:
   push:
-    branches: ['**']
+    branches-ignore: [ 'dependabot/**' ]
     paths:
       - 'modules/**'
       - 'samples/spring-boot-personal-assistant/**'
