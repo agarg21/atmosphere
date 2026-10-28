@@ -2,7 +2,7 @@ name: "CI: Samples"
 
 on:
   push:
-    branches: [ '**' ]
+    branches-ignore: [ 'dependabot/**' ]
     paths:
       - 'samples/**'
       - 'modules/**'

@@ -25,7 +25,7 @@ name: "CI: Integration Tests"
 on:
   workflow_dispatch:
   push:
-    branches: [ '**' ]
+    branches-ignore: [ 'dependabot/**' ]
     paths-ignore:
       - '**.md'
       - 'docs/**'
